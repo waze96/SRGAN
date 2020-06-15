@@ -6,10 +6,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.io as sio
 
+
+## ONLY WORKS WITH DIV2K DATASET BECAUSE THE NAME OF THE IMAGES!
+## THIS SCRIPT SLICE AN IMAGE IN A LOT OF BOXES OF 128x128
+## FROM THE DIV2K DATASET YOU OBTAIN MORE THAN 100 IMAGES FOR AN IMAGE.
+
+## WE USE THIS SCRIPT TO SLICE IMAGES, WHEN THE IMAGES ARE CREATED IN 128x128 RESOLUTION
+## WE USE THE RESIZE.PY SCRIPT TO OBTAIN THE LR IMAGES OF THIS NEW SET AND CREATE THE .MAT!
+
 data_path = "/home/waze/Downloads/DATASETS_RESIZE/"
 path = data_path + "DIV2K_train_HR/"
-resultPath_X = data_path + "DIV2K_train_64/"
-resultPath_y = data_path + "DIV2K_train_128/"
+resultPath_y = data_path + "test/"
 
 def crop(infile,height,width):
     im = Image.open(infile)
@@ -33,9 +40,8 @@ def save_crop(img_crop, out_path, start_num,h,w):
 out_num_x2=0
 out_num_orig=0
 
-for i in range(1,801):
-    picPath_orig = path+format(i,'04')+'.png'
-    #cropInp = crop(picPath_orig,64,64)
+dirs = os.listdir( path )
+for item in dirs:
+    picPath_orig = path+item
     cropLbl = crop(picPath_orig,128,128)
-    #out_num_x2 = save_crop(cropX2,resultPath_X,out_num_x2+1,64,64)
     out_num_orig = save_crop(cropLbl,resultPath_y,out_num_orig+1,128,128)
