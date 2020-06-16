@@ -12,7 +12,7 @@ This repository includes:
     The project code in .ipynb format.
     The project code in .py format.
     Two scripts in .py format to create new .mat files and slice images, both commented.
-    The .mat file with 10K of images from DIV2K Dataset (TRAINING).
+    The .mat file with 800 of images from DIV2K Dataset (TRAINING). The .mat with 10K is so big to upload here.
     The .mat file with 100 of images from DIV2K Dataset (TEST).
     The .mat file with few images of pixel-art to test the results in other kind of images (TEST).
     
