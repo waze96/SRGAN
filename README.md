@@ -17,8 +17,10 @@ This repository includes:
     The .mat file with few images of pixel-art to test the results in other kind of images (TEST).
     
 The idea of this project is obtain images with more resolution applying SRGAN.
+
 We use the architecture of this paper, with some changes: https://arxiv.org/abs/1609.04802.
 This SRGAN is trained and programed to increment by 2 the resolution, we use images of 64x64 to obtain 128x128 images.
+
 But it can be used to obtain 128x128 to 256x256, we can't test the results.
 
 To upscale the resolution more than 2 is necessary change a little bit the architecture!!
