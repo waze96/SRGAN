@@ -26,7 +26,7 @@ We use this dataset: https://data.vision.ee.ethz.ch/cvl/DIV2K/.
 
 This SRGAN is trained and programed to increment by 2 the resolution, we use images of 64x64 to obtain 128x128 images.
 
-But it can be used to obtain 128x128 to 256x256, we can't test the results.
+But it can be used to obtain 128x128 to 256x256, we doesn't test the results.
 
 To upscale the resolution more than 2 is necessary change a little bit the architecture!!
 
