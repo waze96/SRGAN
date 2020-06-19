@@ -15,7 +15,8 @@ This repository includes:
     We cannot update the .mat file to train the model because the file is so big!
     The .mat file with 100 of images from DIV2K Dataset (TEST).
     The .mat file with few images of pixel-art to test the results in other kind of images (TEST).
-    Drive Link to obtain the MAT files: https://drive.google.com/drive/folders/1eiYDPu9iPxuuSZEdfP_Vap4kzNgVBPsU?usp=sharing
+    
+Drive Link to obtain the MAT files: https://drive.google.com/drive/folders/1eiYDPu9iPxuuSZEdfP_Vap4kzNgVBPsU?usp=sharing
     
 The idea of this project is obtain images with more resolution applying SRGAN.
 
